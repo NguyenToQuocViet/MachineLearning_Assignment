@@ -26,7 +26,7 @@ def forward_algorithm(O, pi, A, B):
     alpha = np.zeros((T, N))
 
     # 1. Khởi tạo alpha[0, i]
-        alpha[0, :] = pi * B[:, O[0]]
+    alpha[0, :] = pi * B[:, O[0]]
 
     # 2. Đệ quy (t=1 đến T-1)
     for t in range(1, T):
